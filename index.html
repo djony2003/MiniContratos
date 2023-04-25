@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Calculadora de Mini Contratos</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <h1>Calculadora de Mini Contratos</h1>
+    <form>
+      <label for="tipo">Tipo de Contrato:</label>
+      <select id="tipo" name="tipo">
+        <option value="indice">Mini Índice</option>
+        <option value="dolar">Mini Dólar</option> </select
+      ><br /><br />
+
+      <label for="contratos">Número de Contratos:</label>
+      <input type="number" id="contratos" name="contratos" /><br /><br />
+
+      <label for="pontos">Variação de Pontos:</label>
+      <input type="number" id="pontos" name="pontos" /><br /><br />
+
+      <button type="button" onclick="calcular()">Calcular</button><br /><br />
+
+      <label for="resultado">Resultado:</label>
+      <input type="text" id="resultado" name="resultado" readonly /><br /><br />
+    </form>
+
+    <script src="script.js"></script>
+  </body>
+</html>
